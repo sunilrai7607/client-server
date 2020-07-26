@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+# Oauth2 resource server configuration
+security:
+  oauth2:
+    client:
+      client-id: c825bfbd-c202-40a9-8fcd-d9386195687a
+      client-secret: admin
+      grantType: client_credentials
+      accessTokenUri: http://localhost:9090/oauth/token
+      user-authorization-uri: http://localhost:9090/oauth/authorize
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
